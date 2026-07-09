@@ -1,0 +1,5 @@
+date: 2026-07-09
+name: Spaceship
+description: A futuristic spaceship with sleek lines.
+prompt: |
+  Generate a complete, single-file OpenSCAD script for a Spaceship. The design should be A futuristic spaceship with sleek lines.. Use primitive shapes like sphere, cylinder, cube, and basic transformations (translate, rotate, scale) to create a recognizable, low-poly 3D model. Ensure the code is valid and produces a single connected manifold object. Return ONLY the raw SCAD code, no explanations.
