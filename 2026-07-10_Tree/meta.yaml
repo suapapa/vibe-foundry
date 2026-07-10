@@ -1,0 +1,4 @@
+date: 2026-07-10
+name: Tree
+description: A stylized pine tree with a textured trunk.
+model_prompt: Generate a complete, single-file OpenSCAD script for a Tree. The design should be A stylized pine tree with a textured trunk.. Use primitive shapes like sphere, cylinder, cube, and basic transformations (translate, rotate, scale) to create a recognizable, low-poly 3D model. Ensure the code is valid and produces a single connected manifold object. Return ONLY the raw SCAD code, no explanations.
