@@ -41,13 +41,14 @@ module tower_roof() {
     translate([0, 0, TOW_H - 3 + ROOF_H]) sphere(r = 1.5);
 }
 
-/* Curtain wall along X, centered in X/Y, merlons embedded 3 units -------- */
+/* Curtain wall along X, centered in X/Y, merlons embedded 4 units -------- */
 module wall(len) {
-    cube([len, WALL_T, WALL_H], center = [true, true, false]);
-    // 4 merlons per wall, step = 13, width 6.5 (exact halves)
+    // NOTE: explicit corners (this wasm build ignores vector center=)
+    translate([-len/2, -WALL_T/2, 0]) cube([len, WALL_T, WALL_H]);
+    // 4 merlons per wall, step = 13; deeper than the wall in Y so no faces coincide
     for (cx = [-19.5, -6.5, 6.5, 19.5])
-        translate([cx - 3.25, -1.5, WALL_H - 3])
-            cube([6.5, 3, 4]);
+        translate([cx - 3.25, -WALL_T/2 + 1, WALL_H - 4])
+            cube([6.5, WALL_T - 2, 5]);
 }
 
 /* Keep: box + crown + merlons + pyramid roof + flag ---------------------- */
@@ -100,6 +101,6 @@ color(roof_c) {
         translate([dx * SPAN / 2, dy * SPAN / 2, Z0]) tower_roof();
 }
 
-// gate door overlapping the south curtain wall by 2 units
+// gate door: protrudes 1 unit past the wall face, buried 5 units inside it
 color(wood)
-    translate([-5, -SPAN / 2 - 3, Z0]) cube([10, 5, 14]);
+    translate([-5, -SPAN / 2 - 4, Z0]) cube([10, 6, 14]);
