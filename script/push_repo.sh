@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# vibe-foundry 자동 push (cron 13:00)
+# vibe-foundry push 스크립트 (12:00 생성 잡의 마지막 단계에서 실행)
 # 남은 변경분이 있으면 커밋한 뒤 main을 push한다. push할 게 없으면 조용히 종료.
 set -euo pipefail
 

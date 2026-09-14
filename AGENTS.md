@@ -2,7 +2,7 @@
 
 이 저장소는 Agent가 매일 3D 모델을 생성해 쌓는 아카이브다. 아래 규칙을 따를 것.
 
-## 매일의 흐름 (12:00 생성 → 13:00 push)
+## 매일의 흐름 (12:00 생성 → 커밋 → 즉시 push)
 
 1. `python3 script/daily_model.py` 실행 → JSON 한 줄 출력(`date`, `name`, `description`, `model_prompt`).
 2. `model_prompt`를 바탕으로 **단일 파일 OpenSCAD 스크립트**를 작성한다.
@@ -16,7 +16,7 @@
    (예: `2026-07-12_Coffee_Mug/`).
    - 이미 존재하면 다른 이름으로 다시 고른다 (하루 1모델, 이름 충돌 금지).
 6. 파일 3개 저장: `model.scad`, `model.stl`, `meta.yaml`.
-7. `git add` + `git commit -m "Add {date} {name} model"` — **push는 하지 않는다** (13:00 잡이 담당).
+7. `git add` + `git commit -m "Add {date} {name} model"` 후 **즉시 `bash script/push_repo.sh`로 push한다** (같은 잡이 커밋과 push를 모두 수행).
 
 ## meta.yaml 규칙
 
@@ -27,4 +27,4 @@
 
 - `.gitignore`에 STL 제외 같은 것 하지 말 것 — STL은 커밋 대상.
 - 날짜 디렉터리 안의 기존 파일을 수정/삭제하지 말 것 (append-only 아카이브).
-- push는 `script/push_repo.sh`(13:00 cron) 또는 명시적 사용자 요청에서만.
+- push는 생성 잡(12:00)의 마지막 단계로 `script/push_repo.sh`를 실행하거나 명시적 사용자 요청에서만.
