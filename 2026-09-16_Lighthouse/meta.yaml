@@ -1,0 +1,4 @@
+date: "2026-09-16"
+name: "Lighthouse"
+description: "A tall striped lighthouse on a small rock."
+model_prompt: "Generate a complete, single-file OpenSCAD script for a Lighthouse. The design should be A tall striped lighthouse on a small rock. Use primitive shapes like sphere, cylinder, cube, and basic transformations (translate, rotate, scale) to create a recognizable, low-poly 3D model. Ensure the code is valid and produces a single connected manifold object. Return ONLY the raw SCAD code, no explanations."
