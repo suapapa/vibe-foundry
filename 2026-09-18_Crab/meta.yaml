@@ -1,0 +1,4 @@
+date: "2026-09-18"
+name: "Crab"
+description: "A seashore crab with two prominent pincers."
+model_prompt: "Generate a complete, single-file OpenSCAD script for a Crab. The design should be A seashore crab with two prominent pincers. Use primitive shapes like sphere, cylinder, cube, and basic transformations (translate, rotate, scale) to create a recognizable, low-poly 3D model. Ensure the code is valid and produces a single connected manifold object. Return ONLY the raw SCAD code, no explanations."
