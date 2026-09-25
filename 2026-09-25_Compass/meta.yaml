@@ -1,0 +1,4 @@
+date: "2026-09-25"
+name: "Compass"
+description: "A brass pocket compass with a directional needle."
+model_prompt: "Generate a complete, single-file OpenSCAD script for a Compass. The design should be A brass pocket compass with a directional needle. Use primitive shapes like sphere, cylinder, cube, and basic transformations (translate, rotate, scale) to create a recognizable, low-poly 3D model. Ensure the code is valid and produces a single connected manifold object. Return ONLY the raw SCAD code, no explanations."
