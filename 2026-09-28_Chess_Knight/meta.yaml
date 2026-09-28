@@ -1,0 +1,4 @@
+date: "2026-09-28"
+name: "Chess Knight"
+description: "A carved chess knight piece shaped like a horse head."
+model_prompt: "Generate a complete, single-file OpenSCAD script for a Chess Knight. The design should be A carved chess knight piece shaped like a horse head. Use primitive shapes like sphere, cylinder, cube, and basic transformations (translate, rotate, scale) to create a recognizable, low-poly 3D model. Ensure the code is valid and produces a single connected manifold object. Return ONLY the raw SCAD code, no explanations."
