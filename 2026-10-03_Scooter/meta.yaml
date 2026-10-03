@@ -1,0 +1,4 @@
+date: "2026-10-03"
+name: "Scooter"
+description: "A cute Italian-style motor scooter with round mirror and seat."
+model_prompt: "Generate a complete, single-file OpenSCAD script for a Scooter. The design should be A cute Italian-style motor scooter with round mirror and seat. Use primitive shapes like sphere, cylinder, cube, and basic transformations (translate, rotate, scale) to create a recognizable, low-poly 3D model. Ensure the code is valid and produces a single connected manifold object. Return ONLY the raw SCAD code, no explanations."
