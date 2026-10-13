@@ -1,5 +1,4 @@
 // Dinosaur (T-Rex) low-poly model
- = 20;
 
 module dinosaur() {
     // Body
