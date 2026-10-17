@@ -1,0 +1,4 @@
+date: "2026-10-17"
+name: "Sunflower"
+description: "A bright sunflower with a central seed disc and petals."
+model_prompt: "Generate a complete, single-file OpenSCAD script for a Sunflower. The design should be A bright sunflower with a central seed disc and petals. Use primitive shapes like sphere, cylinder, cube, and basic transformations (translate, rotate, scale) to create a recognizable, low-poly 3D model. Ensure the code is valid and produces a single connected manifold object. Return ONLY the raw SCAD code, no explanations."
